@@ -37,18 +37,38 @@ header{
   border-radius: 4px;
   right: auto;
   display: flex;
-  flex-direction: column-reverse;
   justify-content: space-between;
-  
   padding: 8px;
-  background-color: rgb(48 42 91 / 47%);
+  background-color: rgb(48 42 91 / 70%);
   backdrop-filter: blur(4px);
   border: 1px solid rgb(255 255 255  / 5%);
   z-index: 10;
-  width:60px;
   transition:0.5s ease-in-out;
+  gap:24px;
 }
-header.expand {width:240px;align-items: flex-start;}
+.brand-logo-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+header nav{
+    display: none;
+    transition:0.5s ease-in-out;
+}
+header nav ul{
+    padding: 0;
+    margin: 0;
+}header nav ul li{
+    margin-bottom: 24px;
+    padding-right:24px;
+}
+header nav ul li a{
+    font-size: 32px;
+    font-weight: 300;
+}
+header.expand nav{
+    display: block;
+}
 header img{
     width: 50px;
 }
@@ -331,7 +351,9 @@ li{
 .sec2,.sec4{
     justify-content: flex-start;
 }
-  
+  nav a{
+    color:#fff;
+  }
  
   
  

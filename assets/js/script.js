@@ -80,11 +80,8 @@ function checkScrollDirectionIsUp(event) {
   return event.deltaY < 0;
 }
 
-//toggle functionality
+//toggle functionality to expand the navigation [in progress]
 document.querySelector('#nav-toggle').addEventListener("click", navToggle);
 function navToggle(){
 	document.querySelector("header").classList.toggle("expand");
 }
-
-
-
